@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyWidgetClass</class>
+ <widget class="QWidget" name="MyWidgetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyWidget</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>80</y>
+     <width>77</width>
+     <height>262</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>60</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>显示模式：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>输入掩码：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>输入验证：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>自动完成：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>79</y>
+     <width>261</width>
+     <height>269</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>56</number>
+    </property>
+    <item>
+     <widget class="QLineEdit" name="lineEdit1">
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit2">
+      <property name="inputMask">
+       <string>&gt;AA-90-bb-! aa\#H;*</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit3"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit4"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MyWidget.qrc"/>
+ </resources>
+ <connections/>
+</ui>
